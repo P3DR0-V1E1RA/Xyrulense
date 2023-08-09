@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xyrus Comu</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>𝓧𝔂𝓻𝓾𝓼</h1>
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="decorated-section">
+            <div class="hero">
+                <h1>Bem-vindo à Comunidade 𝓧𝓨𝓡𝓤𝓢</h1>
+                <p>Explore as terras místicas dos jovens aventureiros de Xyrus.</p>
+                <a href="#sobre" class="btn">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section id="personagens" class="decorated-section">
+            <h2>Figuras Principais</h2>
+            <div class="character-card">
+                <img src="Nova pasta/Vecto.jpeg" alt="Nome do Personagem 1">
+                <div class="fahre"><h2>Vector</h2></div>
+                <p>Criador da Comunidade.</p>
+            </div>
+            <div class="character-card">
+                <img src="Nova pasta/Pedro.jpeg" alt="Criador">
+                <div class="fahre"><h2>Fahre</h2></div>
+                <p>Criador do Web-Site.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="decorated-section">
+            <h2>Grupos</h2>
+            <div class="grupos">
+                <div class="image-container">
+                    <img src="Nova pasta/x1.jpg" alt="Xyrus">
+                    <h3>Xyrus</h3>
+                </div>
+                <div class="image-container">
+                    <img src="Nova pasta/x2.jpg" alt="Xyrus Cinema">
+                    <h4>Cinema - Xyrus</h4>
+                </div>
+                <div class="image-container">
+                    <img src="Nova pasta/x3.jpeg" alt="Xyrus Casa dos Prazeres">
+                    <h5>Cabaré - Xyrus</h5>
+                </div>
+                <div class="image-container">
+                    <img src="Nova pasta/x4.jpeg" alt="Imagem 4">
+                    <h6>RPG - Xyrus</h6>
+                </div>
+                <div class="image-container">
+                    <img src="Nova pasta/x5.jpeg" alt="Imagem 5">
+                    <h7>Escritores e Artistas - X</h7>
+                </div>
+            </div>
+        </section>
+        
+        <section id="historia" class="decorated-section">
+            <h2>Canais de Streaming</h2>
+            <ul>
+                <li><a href="https://www.twitch.tv/eogabe1?sr=a">eogabe1 (Twitch)</a></li>
+                <li><a href="https://www.youtube.com/@Luifyt">LuiF (YouTube)</a></li>
+                <li><a href="https://www.youtube.com/@Fahre./featured">°Fahrenheit「69」(YouTube)</a></li>
+            </ul>
+        </section>
+
+        <section id="contato" class="decorated-section">
+            <h2>Entre em Contato</h2>
+            <form action="enviar-contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div id="mensagem-enviada" style="display: none;">Mensagem enviada!</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Xyrus - Uma Comunidade de Sanidade 0</p>
+        <ul class="footer-icons">
+            <li><a href="https://seu-link-do-whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://discord.gg/8yRqPuSb"><i class="fab fa-discord"></i></a></li>
+            <li><a href="https://seu-link-do-instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+    <div id="disqus_thread"></div>
+    <script>
+        (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://xyrus.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
