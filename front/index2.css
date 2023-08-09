@@ -1,0 +1,280 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url("https://i.gifer.com/embedded/download/747J.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #ffa80765;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+}
+
+/* Efeito de transição para as imagens dos grupos */
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-left: 1rem;
+}
+
+ul li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+ul li a:hover {
+    background-color: #d76f00;
+}
+
+/* Estilos para a seção do herói */
+.hero-section {
+    background-image: url("Imagens/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para a seção de personagens */
+.decorated-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.character-card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(247 0 0 / 15%);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 24%);
+}
+
+/* ... (seu CSS existente) ... */
+
+/* Efeito de transição para as imagens dos grupos */
+.image-container img,
+.character-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img,
+.character-card:hover img {
+    transform: scale(1.1);
+}
+
+/* ... (seu CSS existente) ... */
+
+
+/* Seu CSS existente */
+
+/* Estilos para a seção de criador */
+.creator-info {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.creator-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    cursor: pointer; /* Adicionando cursor de mão para indicar que a imagem é clicável */
+}
+
+.creator-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.creator-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 0.5rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f88c00;
+}
+
+/* Seu CSS existente */
+
+
+/* Estilos para a seção de contato */
+#contato form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contato form label {
+    width: 100%;
+    max-width: 400px;
+    margin: 0.5rem;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contato form button {
+    padding: 0.5rem 1rem;
+    background-color: #f88c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato form button:hover {
+    background-color: #d76f00;
+}
+
+#mensagem-enviada {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f88c00;
+    color: #fff;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #f88c00;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.footer-icons li {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    /* ... Outros estilos responsivos ... */
+    .image-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
